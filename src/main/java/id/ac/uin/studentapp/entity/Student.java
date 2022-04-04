@@ -14,23 +14,22 @@ public class Student {
     private Long id;
 
     @NotEmpty (message = "First Name is required")
-    @Column(nullable = false,name = "first_name")
+    @Column(name = "first_name")
     private String firstName;
 
     @NotEmpty (message = "Last Name is required")
-    @Column(nullable = false,name = "last_name")
+    @Column(name = "last_name")
     private String lastName;
 
     @NotEmpty (message = "Email is required")
-    @Column(nullable = false,name = "email", unique = true)
+    @Column(name = "email", unique = true)
     private String email;
 
-    @NotEmpty (message = "Phone number is required")
-    @Column(nullable = false,name = "phone_number", unique = true)
+    @NotEmpty (message = "Phone Number is required")
+    @Column(name = "phone_number", unique = true)
     private String phoneNumber;
 
-    @NotEmpty (message = "Jurusan is required")
-    @Column(nullable = false,name = "jurusan", unique = true)
+    @NotEmpty(message = "Jurusan is required")
+    @Column(nullable = false, unique = true)
     private String jurusan;
-
 }
